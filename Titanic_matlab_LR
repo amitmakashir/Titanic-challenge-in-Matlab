@@ -27,7 +27,7 @@ n = size(X,2); % no. of features including bias term
 
 initial_theta = zeros(n,1);
 
-[cost, grad] = cost_function(initial_theta, X, y);
+[cost, grad] = cost_function(initial_theta, X, y);    % call the costfunction
 fprintf('Cost at initial theta=%f \n', cost);
 fprintf(' %f \n', grad);
 
@@ -39,7 +39,7 @@ fprintf('\n Optimized cost =%f\n', cost);
 
 %training accuracy 
 
-p = predict(X,theta);
+p = predict(X,theta);     % call the predict function
 
 fprintf('Train Accuracy: %f\n', (sum(p == y)/m) * 100);
 
